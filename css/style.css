@@ -17,11 +17,11 @@ img {
 
 /* Regole di layout*/
 body {
-    font-family: sans-serif;
+    font-family: "Fredoka", sans-serif;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1010px;
     margin-inline: auto;
 }
 
@@ -64,7 +64,6 @@ body {
 
 .card {
     background-color: #0F0E17;
-    font-size: 14px;
     color: #fff;
     box-shadow: 0 0 15px -3px #bbb;
 }
@@ -75,12 +74,14 @@ body {
 }
 
 .card__title {
-    margin-top: calc(calc(var(--m3) / 2) - 5px);
+    margin-top: calc(calc(var(--m3) / 2) - 7px);
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .card__title,
 .card__role {
-    margin-bottom: calc(calc(var(--m3) / 2) - 5px);
+    margin-bottom: calc(calc(var(--m3) / 2) - 7px);
 }
 
 .card__email {
