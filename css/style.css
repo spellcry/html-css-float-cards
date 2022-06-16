@@ -1,3 +1,9 @@
+:root {
+    --m1: 50px;
+    --m2: 40px;
+    --m3: 30px;
+}
+
 /* Regole di reset */
 * {
     box-sizing: border-box;
@@ -10,7 +16,57 @@ img {
 }
 
 /* Regole di layout*/
+body {
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 1000px;
     margin-inline: auto;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Main header */
+.main-header {
+    padding-top: var(--m3);
+}
+
+.main-header__title {
+    margin-bottom: var(--m1);
+    text-align: center;
+    color: #E53170;
+    font-weight: 900;
+}
+
+/* Cards Wrapper*/
+.cards-wrapper__text {
+    margin-bottom: var(--m2);
+    text-align: center;
+}
+
+/* Cards */
+.row {
+    margin-inline: calc(var(--m3) * -1);
+}
+
+.col {
+    padding: 0 calc(var(--m3) / 2) calc(var(--m2));
+    width: calc(100% / 3);
+    float: left;
+}
+
+.card {
+    background-color: #0F0E17;
+    color: #fff;
+}
+
+.card__img {
+    margin-right: calc(var(--m3) / 2);
+    float: left;
 }
