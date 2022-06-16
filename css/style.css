@@ -53,7 +53,7 @@ body {
 
 /* Cards */
 .row {
-    margin-inline: calc(var(--m3) * -1);
+    margin-inline: calc(var(--m3) / -2);
 }
 
 .col {
