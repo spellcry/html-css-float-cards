@@ -26,7 +26,8 @@ body {
 }
 
 /* Clearfix */
-.clearfix::after {
+.clearfix::after,
+.clearfix::before {
     content: "";
     clear: both;
     display: table;
@@ -63,10 +64,26 @@ body {
 
 .card {
     background-color: #0F0E17;
+    font-size: 14px;
     color: #fff;
+    box-shadow: 0 0 15px -3px #bbb;
 }
 
 .card__img {
     margin-right: calc(var(--m3) / 2);
     float: left;
+}
+
+.card__title {
+    margin-top: calc(calc(var(--m3) / 2) - 5px);
+}
+
+.card__title,
+.card__role {
+    margin-bottom: calc(calc(var(--m3) / 2) - 5px);
+}
+
+.card__email {
+    color: #55CCF2;
+    text-decoration: none;
 }
