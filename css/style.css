@@ -27,7 +27,7 @@ body {
 
 /* Clearfix */
 .clearfix::after,
-.clearfix::before {
+.card.clearfix::before {
     content: "";
     clear: both;
     display: table;
